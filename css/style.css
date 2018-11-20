@@ -239,7 +239,7 @@ td {
     font-size: 25px;
     width: 90%;
     margin: auto;
-    border: 3px solid orange;
+    border: 3px solid #4CAF50;
     table-layout: fixed;
     border-collapse: collapse;
 }
@@ -252,7 +252,7 @@ tr {
 
 th {
     padding: 15px;
-    background: orange;
+    background: #4CAF50;
 }
 
 .portfolio-wrap {
@@ -372,4 +372,8 @@ th {
 .links:focus {
     outline: 0;
     box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5)
+}
+
+span{
+    color: red;
 }

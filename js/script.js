@@ -46,10 +46,9 @@ function applyClass(link){
 }
 
 function sendMail() {
-    var email = document.getElementsByName("email");
     var name = document.getElementsByName("name");
     var msg = document.getElementsByName("msg");
     var subject = "Email Response";
-    var body = name + "\n" + email + "\n" + msg;
+    var body = name + "\n" + msg;
     window.open(`mailto:asad.cse.ru.15@gmail.com?subject=${subject}&body=${body}`);
 }
