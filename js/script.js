@@ -13,7 +13,36 @@ window.onload = function() {
 }
 
 window.onscroll = function() {
+    var header = document.getElementById("nav");    
+    var links = header.getElementsByClassName("nav-item");
+    var scroollHeight = document.body.scrollTop;
 
+    if(scrollHeight < 700){
+        removeClass(links)
+        .then(applyClass(links[0]));
+    }
+    else if(scrollHeight > 700 && scrollHeight < 1300){
+        removeClass(links)
+        .then(applyClass(links[1]));
+    }
+    else if(scrollHeight > 1300 && scrollHeight < 1900){
+        removeClass(links)
+        .then(applyClass(links[2]));
+    }
+    else{
+        removeClass(links)
+        .then(applyClass(links[3]));
+    }
+}
+
+function removeClass(links){
+    for(var i=0; i<links.length; i++){
+        links[0].className.replace(" active", "");
+    }
+}
+
+function applyClass(link){
+    link.className += " active";
 }
 
 function sendMail() {
