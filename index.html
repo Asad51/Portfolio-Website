@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="header" class=" navbar sticky-top ">
+        <div id="nav" class="center">
+            <a class="nav-item active" href="#about">About</a>
+            <a class="nav-item" href="#education">Education</a>
+            <a class="nav-item" href="#portfolio">Portfolio</a>
+            <a class="nav-item" href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div id="about" class="about-wrap">
+        <div class=" container">
+            <div>
+                <img class=" img" src="./images/pro.jpg" alt="">
+            </div>
+            <h1 class="center">Md. Asadul Islam</h1>
+            <div class="about-me">
+                <p class="about-text ">I am a very much passionate web application developer.</p>
+                <p class="about-text">I have experience in MEAN stack, developing my personal projects.</p>
+                <p class="about-text">I try to learn new technologies.</p>
+            </div>
+            <button class="resume btn">Download Resume</button>
+        </div>
+    </div>
+
+    <div class="edu" id="education">
+        <h2 class="edu-head">Educational Attainment</h2>
+        <table class="edu-table">
+            <thead>
+                <tr>
+                    <th>Exam Name</th>
+                    <th>Passing Year</th>
+                    <th>Roll</th>
+                    <th>Reg.</th>
+                    <th>Section/Dept.</th>
+                    <th>GPA/CGPA</th>
+                    <th>Institute</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SSC</td>
+                    <td>2012</td>
+                    <td>195741</td>
+                    <td>661629</td>
+                    <td>Rajshahi</td>
+                    <td>GPA-5.00</td>
+                    <td>Bahuka High School</td>
+                </tr>
+                <tr>
+                    <td>HSC</td>
+                    <td>2014</td>
+                    <td>119416</td>
+                    <td>948113</td>
+                    <td>Dhaka</td>
+                    <td>GPA-5.00</td>
+                    <td>Govt. Science College</td>
+                </tr>
+                <tr>
+                    <td>B.Sc.Eng.</td>
+                    <td>2014-15</td>
+                    <td>1510876151</td>
+                    <td>1510876151</td>
+                    <td>CSE</td>
+                    <td>CGPA-3.25</td>
+                    <td>University of Rajshahi</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="portfolio" class="portfolio-wrap">
+        <h1 class="portfolio-head">Portfolio</h1>
+        <div class="project">
+            <h2 class="project-head">URL Shortener</h2>
+            <h4 class="project-details">Nodejs, ExpressJs, Angular 6, Bootstrap 4, Mongodb</h4>
+            <button href="#" class="project-link">Github</button>
+        </div>
+        <div class="project">
+            <h2 class="project-head">Online Job Portal</h2>
+            <h4 class="project-details">Nodejs, ExpressJs, Angular 7, Bootstrap 4, Mongodb</h4>
+            <button href="#" class="project-link">Github</button>
+        </div>
+        <div class="project">
+            <h2 class="project-head">Login System</h2>
+            <h4 class="project-details">Nodejs, ExpressJs, Angular 6, Bootstrap 4, Mongodb</h4>
+            <button href="#" class="project-link">Github</button>
+        </div>
+
+        <div class="project">
+            <h2 class="project-head">Node API</h2>
+            <h4 class="project-details">Nodejs, ExpressJs, Angular 6, Bootstrap 4, Mongodb</h4>
+            <button href="#" class="project-link">Github</button>
+        </div>
+        <button class="project-link load">Load More</button>
+    </div>
+
+    <div id="contact" class="contact-wrap">
+        <h1 class="center">Get In Touch</h1>
+        <div class="row">
+            <div class="col">
+                <h2 class="center">Social Media</h2>
+                <div class="social">
+                    <img class="" src="images/l.png">
+                    <a class="links" target="_blank" href="https://www.linkedin.com/in/asadcseru/">Go to Linkedin</a>
+                </div>
+                <div class="social">
+                    <img class="" src="images/g.png">
+                    <a class="links" target="_blank" href="https://github.com/Asad51">Go to Github</a>
+                </div>
+                <div class="social">
+                    <img class="" src="images/gp.png">
+                    <a class="links" target="_blank" href="https://plus.google.com/u/0/103441343514032166325">Go to Google Plus</a>
+                </div>
+                <div class="social">
+                    <img class="" src="images/f.jpg">
+                    <a class="links" target="_blank" href="https://web.facebook.com/asad.cse.ru">Go to Facebook</a>
+                </div>
+            </div>
+            <div class="col">
+                <h2 class="center">Email Me</h2>
+                <form onsubmit="sendMail()" enctype="text/plain">
+                    Name*:
+                    <input type="text" size="60" name="name" placeholder="Your name" required><br><br>Email*:
+                    <input type="email" size="60" name="email" placeholder="Your email address" required><br><br>Message*:<br>
+                    <textarea name="msg" rows="20" cols="80" placeholder="You message" required></textarea><br><br>
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
